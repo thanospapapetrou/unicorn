@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Unicorn</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="./css/unicorn.css" />
+        <script src="./js/Ball.js"></script>
+        <script src="./js/Border.js"></script>
+        <script src="./js/InputPercentage.js"></script>
+        <script src="./js/Path.js"></script>
+        <script src="./js/Pen.js"></script>
+        <script src="./js/Timer.js"></script>
+        <script src="./js/Unicorn.js"></script>
+        <script src="./js/geometry.js"></script>
+    </head>
+    <body onload="Unicorn.main();">
+        <h1>Unicorn</h1>
+        <form action="./index.html">
+            <label for="level">Level:</label>
+            <input type="number" id="level" name="level" min="1" max="7" value="1" />
+            <br />
+            <label for="lives">Lives:</label>
+            <input type="number" id="lives" name="lives" min="1" max="10" value="3" />
+            <br />
+            <label for="threshold">Threshold:</label>
+            <input-percentage id="threshold" name="threshold" value="10"></input-percentage>
+            <br />
+            <input type="submit" value="Start" autofocus />
+        </form>
+        <canvas width="300" height="300">Unicorn</canvas>
+        <p>
+            Level: <span></span>
+            <br />
+            Lives: <span></span>
+            <br />
+            Threshold: <span></span>
+            <br />
+            Area: <span></span>
+            <br />
+            Time: <span></span>
+        </p>
+    </body>
+</html>

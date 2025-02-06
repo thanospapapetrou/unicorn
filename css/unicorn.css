@@ -1,0 +1,15 @@
+body {
+    font-family: 'Varela Round';
+}
+
+canvas, p {
+    display: none;
+}
+
+canvas {
+    float: left;
+}
+
+p {
+    float: right;
+}
